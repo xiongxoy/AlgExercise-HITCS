@@ -12,23 +12,14 @@
 \usepackage{amsmath}
 \zhspacing
 \usepackage[english]{babel}
-\usepackage{blindtext}
+
+%% 提供《算法导论》口味的算法排版，详见clrscode.pdf
 \usepackage{clrscode}
+%% 提供floor和ceiling
 \usepackage{mathtools}
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
 
-
-%\begin{document}
-%\begin{algorithm}[h]
-%\caption{欧几里得算法}
-%\begin{algorithmic}[1]
-%\STATE if b == 0
-%\STATE return a
-%\STATE else return EUCLID(b, a mod b)
-%\end{algorithmic}
-%\end{algorithm}
-%\end{document}
 
 \begin{document}
 
@@ -38,7 +29,7 @@
   \Procname{$\proc{Euclid}(a, b)$}
   \li \If $b = 0$
   \li  \Then  \Return $a$
-  \li \ElseNoIf \Return $\proc{Euclid}(b, a\mod b)$
+  \li \ElseNoIf \Return $\proc{Euclid}(b, a\  \text{mod}\  b)$
       \End
 \end{codebox}
 }
